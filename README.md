@@ -15,18 +15,11 @@ Setup Guide
 
 1.  **Clone the repository**:
 
-    bash
+    `git clone https://github.com/Tanmay17/video-analytics.git`
 
-    Copy code
-
-    `git clone https://github.com/Tanmay17/video-analytics.git
-    cd video-analytics`
+    `cd video-analytics`
 
 2.  **Install dependencies**:
-
-    bash
-
-    Copy code
 
     `npm install`
 
@@ -34,17 +27,9 @@ Setup Guide
 
     -   Create a new PostgreSQL database:
 
-        bash
-
-        Copy code
-
         `createdb your_db_name`
 
     -   Run the `schema.sql` file to create the necessary tables:
-
-        bash
-
-        Copy code
 
         `psql -U your_db_username -d your_db_name -f schema.sql`
 
@@ -54,8 +39,6 @@ Setup Guide
 
     env
 
-    Copy code
-
     `YOUTUBE_API_KEY=your_youtube_api_key
     DB_USERNAME=your_db_username
     DB_PASSWORD=your_db_password
@@ -63,10 +46,6 @@ Setup Guide
     DB_HOST=your_db_host`
 
 6.  **Run the server**:
-
-    bash
-
-    Copy code
 
     `node src/app.js`
 
@@ -85,17 +64,9 @@ API Documentation
 
 **Example Request**:
 
-bash
-
-Copy code
-
 `curl -X GET "http://localhost:3000/api/videos/fetch-video-data?channel_id=UC_x5XG1OV2P6uZZ5FSM9Ttw"`
 
 **Example Response**:
-
-json
-
-Copy code
 
 `{
   "status": "success",
